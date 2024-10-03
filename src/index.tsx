@@ -4,7 +4,7 @@ import App from './components/app/App';
 import './style/style.scss';
 // /Rick-and-Morty
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter basename='/'>
+  <BrowserRouter basename='/Rick-and-Morty'>
     <App />
   </BrowserRouter>
 );
