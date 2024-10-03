@@ -1,0 +1,187 @@
+@import '../../style/variables.scss';
+
+.randomchar {
+  display: flex;
+  height: 250px;
+  min-width: 350px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+
+  &__block {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    position: relative;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 100%;
+    row-gap: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    .try {
+      display: none;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  &__static {
+    width: 50%;
+    padding: 25px;
+    background-color: $dark;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+
+  &__decoration {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    height: 90%;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1150px) {
+  .randomchar {
+    &__buttons {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .randomchar {
+    &__block {
+      width: 100%;
+    }
+
+    &__static {
+      display: none;
+    }
+
+    &__buttons {
+      .try {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .randomchar {
+    &__container {
+      padding: 0;
+    }
+
+    &__block {
+      justify-content: space-evenly;
+    }
+
+    &__info {
+      text-align: center;
+    }
+
+    &__buttons {
+      row-gap: 10px;
+      bottom: 5px;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .randomchar {
+    height: 200px;
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__descr {
+      font-size: 18px;
+    }
+
+    &__block {
+      padding: 5px;
+      column-gap: 10px;
+    }
+
+    &__info {
+      row-gap: 5px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .randomchar {
+    &__buttons {
+      button {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .randomchar {
+    &__name {
+      font-size: 17px;
+    }
+
+    &__descr {
+      font-size: 15px;
+    }
+
+    &__buttons {
+      button {
+        width: 110px;
+      }
+    }
+  }
+}

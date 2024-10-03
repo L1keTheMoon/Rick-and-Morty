@@ -1,0 +1,55 @@
+@import '../../style/variables.scss';
+
+.single-episode {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+
+  &__name {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  &__descr {
+    font-size: 30px;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+
+  &__chars {
+    font-size: 26px;
+    line-height: 32px;
+    color: $main-color;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  &__navigation-buttons {
+    margin-top: 50px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      margin-top: 0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .single-episode {
+    margin-top: 20px;
+
+    &__navigation-buttons {
+      padding: 0 5px;
+    }
+  }
+}

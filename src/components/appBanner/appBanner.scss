@@ -1,0 +1,67 @@
+@import '../../style/variables.scss';
+
+.app {
+	&__banner {
+		width: 100%;
+		background-color: $dark;
+		height: 100px;
+		padding: 0 15px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		text-align: center;
+
+		a {
+			color: $main-color;
+			transition: all;
+			display: inline-block;
+			padding-bottom: 2px;
+			background-image: linear-gradient($main-color 0 0);
+			background-position: 100% 100%;
+			background-size: 100% 2px;
+			background-repeat: no-repeat;
+			transition: background-size 0.3s, background-position 0s 0.3s;
+		}
+
+		a:hover {
+			color: $main-color-dark;
+			background-image: linear-gradient($main-color-dark 0 0);
+			background-position: 0 100%;
+			background-size: 0 2px;
+		}
+
+		&-watch {
+			height: 125px;
+			position: relative;
+			top: 2px;
+		}
+
+		&-inPortal {
+			height: 145px;
+		}
+
+		&-text {
+			font-weight: bold;
+			font-size: 35px;
+			color: #FFFFFF;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.app {
+		&__banner {
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.app {
+		&__banner-text {
+			font-size: 30px;
+		}
+	}
+}
