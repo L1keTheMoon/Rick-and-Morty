@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist -r https://github.com/RomanBurlakov/Rick-and-Morty.git",
     "lint": "eslint .",
     "preview": "vite preview"
   },
