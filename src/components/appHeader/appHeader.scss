@@ -1,75 +1,76 @@
 @import '../../style/variables.scss';
 
 .app {
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5px;
-    margin: 10px auto;
-  }
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1800px;
+		margin: 10px auto;
+	}
 
-  &__title {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 37px;
+	&__title {
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 37px;
 
-    span {
-      color: $main-color;
-    }
-  }
+		span {
+			color: $main-color;
+		}
+	}
 
-  &__menu {
-    display: flex;
-    align-items: center;
+	&__menu {
+		display: flex;
+		align-items: center;
 
-    &-separator {
-      margin: 10px;
-    }
+		&-separator {
+			margin: 10px;
+		}
 
-    ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: bold;
-      font-size: 40px;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: bold;
+			font-size: 40px;
 
-      li {
-        a:hover {
-          color: $main-color;
-        }
-      }
-    }
-  }
+			li {
+				a:hover {
+					color: $main-color;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 700px) {
-  .app {
-    &__header {
-      margin: 5px auto;
+	.app {
+		&__header {
+			margin: 5px auto;
+			padding: 0 5px;
 
-      img {
-        height: 12vmin;
-      }
-    }
+			img {
+				height: 12vmin;
+			}
+		}
 
-    &__menu {
-      ul {
-        font-size: 30px;
-      }
-    }
-  }
+		&__menu {
+			ul {
+				font-size: 30px;
+			}
+		}
+	}
 }
 
 @media (max-width: 470px) {
-  .app {
-    &__menu {
-      &-separator {
-        margin: 5px;
-      }
+	.app {
+		&__menu {
+			&-separator {
+				margin: 5px;
+			}
 
-      ul {
-        font-size: 24px;
-      }
-    }
-  }
+			ul {
+				font-size: 24px;
+			}
+		}
+	}
 }
