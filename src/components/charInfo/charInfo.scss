@@ -1,131 +1,131 @@
 @import '../../style/variables.scss';
 
 .char {
-  &__info {
-    padding: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    background-color: #fff;
-    width: 350px;
-    min-width: 350px;
-    margin-left: 20px;
-    height: 700px;
-    position: sticky;
-    top: 0;
-    overflow: auto;
+	&__info {
+		padding: 10px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+		background-color: #fff;
+		width: 350px;
+		min-width: 350px;
+		margin-left: 20px;
+		height: 700px;
+		position: sticky;
+		top: 0;
+		overflow-x: hidden;
 
-    &-name {
-      font-weight: bold;
-      font-size: 30px;
-      text-transform: uppercase;
-      text-align: center;
-    }
-  }
+		&-name {
+			font-weight: bold;
+			font-size: 30px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
 
-  &__select {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+	&__select {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
 
-  &__modal-blur {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
+	&__modal-blur {
+		display: inline-flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
 
-  &__close {
-    display: none;
-    border: none;
-    background-color: transparent;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 5px;
-  }
+	&__close {
+		display: none;
+		border: none;
+		background-color: transparent;
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 5px;
+	}
 
-  &__basics {
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
+	&__basics {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
 
-  &__btns {
-    margin-top: 35px;
+	&__btns {
+		margin-top: 35px;
 
-    a:nth-child(2) {
-      margin-top: 10px;
-    }
-  }
+		a:nth-child(2) {
+			margin-top: 10px;
+		}
+	}
 
-  &__descr {
-    margin-top: 15px;
-    font-size: 22px;
+	&__descr {
+		margin-top: 15px;
+		font-size: 22px;
 
-    &-status-icon {
-      height: 0.7em;
-      width: 0.7em;
-      display: inline-block;
-      border-radius: 50%;
-      margin-right: 5px;
-    }
+		&-status-icon {
+			height: 0.7em;
+			width: 0.7em;
+			display: inline-block;
+			border-radius: 50%;
+			margin-right: 5px;
+		}
 
-    table {
-      width: 100%;
-      vertical-align: top;
-    }
+		table {
+			width: 100%;
+			vertical-align: top;
+		}
 
-    &-prop-name {
-      font-weight: bold;
-      width: 110px;
-      vertical-align: top;
-      text-transform: capitalize;
-    }
+		&-prop-name {
+			font-weight: bold;
+			width: 110px;
+			vertical-align: top;
+			text-transform: capitalize;
+		}
 
-    &-prop-value {
-      text-transform: capitalize;
+		&-prop-value {
+			text-transform: capitalize;
 
-      a {
-        color: $main-color;
-        text-decoration: underline;
-      }
+			a {
+				color: $main-color;
+			}
 
-      a:hover {
-        color: $main-color-dark;
-      }
-    }
-  }
+			a:hover {
+				color: $main-color-dark;
+				background-image: linear-gradient($main-color-dark, $main-color-dark);
+			}
+		}
+	}
 }
 
 @media (max-width: 1330px) {
-  .char {
-    &__info {
-      width: 300px;
-      min-width: 300px;
-    }
-  }
+	.char {
+		&__info {
+			width: 300px;
+			min-width: 300px;
+		}
+	}
 }
 
 @media (max-width: 990px) {
-  .char {
-    &__info {
-      width: 50%;
-      height: 100%;
-      margin-left: 5px;
-      position: relative;
-    }
+	.char {
+		&__info {
+			width: 50%;
+			height: 100%;
+			margin-left: 5px;
+			position: relative;
+		}
 
-    &__close {
-      display: block;
-    }
+		&__close {
+			display: block;
+		}
 
-    &__modal-blur {
-      height: 100%;
-      width: 100%;
-      overflow: scroll;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      transition: right 0.4s linear;
-    }
-  }
+		&__modal-blur {
+			height: 100%;
+			width: 100%;
+			overflow: scroll;
+			position: fixed;
+			top: 0;
+			right: -100%;
+			transition: right 0.4s linear;
+		}
+	}
 }

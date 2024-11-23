@@ -6,6 +6,7 @@
 		justify-content: space-between;
 		max-width: 1800px;
 		margin: 10px auto;
+		padding: 0 5px;
 	}
 
 	&__title {
@@ -46,7 +47,6 @@
 	.app {
 		&__header {
 			margin: 5px auto;
-			padding: 0 5px;
 
 			img {
 				height: 12vmin;
