@@ -7,6 +7,10 @@
 		max-width: 1800px;
 		margin: 10px auto;
 		padding: 0 5px;
+
+		>a:hover {
+			background-size: 0;
+		}
 	}
 
 	&__title {

@@ -136,7 +136,7 @@ const ViewCharInfo = ({ charInfo: { name, image, props }, coloseModal }: ViewCha
 										)
 									} else if (e[0] === 'firstSeen' && typeof e[1] === 'object') {
 										return (
-											< TR key={i} name={'first seen'} value={''} text={<Link onClick={coloseModal} to={e[1].url}>{e[1].name}</Link>} />
+											< TR key={i} name={'first seen'} value={''} text={<Link className='link' onClick={coloseModal} to={e[1].url}>{e[1].name}</Link>} />
 										)
 									}
 								})}

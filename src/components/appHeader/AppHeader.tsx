@@ -28,9 +28,9 @@ const AppHeader = () => {
 			</Link>
 			<nav className='app__menu'>
 				<ul>
-					<li><NavLink className='big' to='/' title='Characters' style={ActiveLinkChars}>Characters</NavLink></li>
+					<li><NavLink className='link big' to='/' title='Characters' style={ActiveLinkChars}>Characters</NavLink></li>
 					<li className='app__menu-separator'>/</li>
-					<li><NavLink className='big' to='/episodes' title='Episodes' style={ActiveLink}>Episodes</NavLink></li>
+					<li><NavLink className='link big' to='/episodes' title='Episodes' style={ActiveLink}>Episodes</NavLink></li>
 				</ul>
 			</nav>
 		</header>
