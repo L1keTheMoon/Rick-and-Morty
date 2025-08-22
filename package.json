@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://romanburlakov.github.io/Rick-and-Morty",
+  "homepage": "https://l1kethemoon.github.io/Rick-and-Morty",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
